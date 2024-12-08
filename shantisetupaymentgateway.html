@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+        :root {
+            --primary-color: #3A6351;
+            --secondary-color: #D9BF77;
+            --background-color: #F0EDEE;
+            --head-foot-color: #3D220F;
+            --text-color: #965D30;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            position: fixed;
+            z-index: 3;
+            width: 100%;
+            left: 0;
+            top: 0;
+            display: flex;
+            height: 100px;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            font-weight: bold;
+            color: var(--text-color);
+            text-decoration: underline;
+            text-decoration-color: white;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin: 0;
+            font-style: italic;
+            color: var(--text-color);
+            text-decoration: underline;
+            text-decoration-color: white;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 20px 0;
+            margin-right: 50px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex: 1;
+            padding: 140px 20px 40px;
+        }
+
+        .container form {
+            width: 100%;
+            max-width: 750px;
+            padding: 75px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px var(--shadow-color);
+        }
+
+        form .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        form .col {
+            flex: 1 1 300px;
+        }
+
+        .col .title {
+            font-size: 20px;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .col .inputBox {
+            margin-bottom: 15px;
+        }
+
+        .col .inputBox label {
+            margin-bottom: 5px;
+            display: block;
+            font-weight: 500;
+            color: var(--text-color);
+        }
+
+        .col .inputBox input,
+        .col .inputBox select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            font-size: 15px;
+            border-radius: 4px;
+            background: #fff;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        .col .inputBox input:focus,
+        .col .inputBox select:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 5px var(--primary-color);
+            outline: none;
+        }
+
+        .col .inputBox img {
+            margin-top: 10px;
+            height: 40px;
+            display: block;
+        }
+
+        form .submit_btn {
+            width: 100%;
+            padding: 12px;
+            font-size: 17px;
+            font-weight: bold;
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        form .submit_btn:hover {
+            background: var(--secondary-color);
+        }
+
+        footer {
+            background-color: var(--head-foot-color);
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: auto;
+            font-size: 1em;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Images/logo.jpg" width="130" height="auto" alt="Shanti Setu Logo">
+            <a href="shantisetuhomepage.html" target="_parent">
+                <h1>Shanti Setu</h1>
+                <p>Bridge to Peace</p>
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+        <form action="#">
+            <div class="row">
+                <div class="col">
+                    <h3 class="title">Billing Address</h3>
+                    <div class="inputBox">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="inputBox">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="Enter email address" required>
+                    </div>
+                    <div class="inputBox">
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" placeholder="Enter address" required>
+                    </div>
+                    <div class="inputBox">
+                        <label for="city">City:</label>
+                        <input type="text" id="city" placeholder="Enter city" required>
+                    </div>
+                    <div class="flex">
+                        <div class="inputBox">
+                            <label for="state">State:</label>
+                            <input type="text" id="state" placeholder="Enter state" required>
+                        </div>
+                        <div class="inputBox">
+                            <label for="zip">Zip Code:</label>
+                            <input type="number" id="zip" placeholder="123456" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <h3 class="title">Payment</h3>
+                    <div class="inputBox">
+                        <label for="cardName">Card Accepted:</label>
+                        <img src="https://i.ibb.co/X38b5PF/card-img.png" alt="Card Types">
+                    </div>
+                    <div class="inputBox">
+                        <label for="cardName">Name on Card:</label>
+                        <input type="text" id="cardName" placeholder="Enter card name" required>
+                    </div>
+                    <div class="inputBox">
+                        <label for="cardNum">Credit Card Number:</label>
+                        <input type="text" id="cardNum" placeholder="1111-2222-3333-4444" maxlength="19" required>
+                    </div>
+                    <div class="inputBox">
+                        <label for="expMonth">Exp Month:</label>
+                        <select id="expMonth">
+                            <option value="">Choose month</option>
+                            <option>January</option>
+                            <option>February</option>
+                            <option>March</option>
+                            <option>April</option>
+                            <option>May</option>
+                            <option>June</option>
+                            <option>July</option>
+                            <option>August</option>
+                            <option>September</option>
+                            <option>October</option>
+                            <option>November</option>
+                            <option>December</option>
+                        </select>
+                    </div>
+                    <div class="flex">
+                        <div class="inputBox">
+                            <label for="expYear">Exp Year:</label>
+                            <select id="expYear">
+                                <option value="">Choose year</option>
+                                <option>2023</option>
+                                <option>2024</option>
+                                <option>2025</option>
+                                <option>2026</option>
+                                <option>2027</option>
+                            </select>
+                        </div>
+                        <div class="inputBox">
+                            <label for="cvv">CVV:</label>
+                            <input type="number" id="cvv" placeholder="123" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input type="submit" value="Proceed to Checkout" class="submit_btn">
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Shanti Setu | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

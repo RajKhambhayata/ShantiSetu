@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/ShantiSetuOurTeam.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="common.css" />
+
+    <style>
+        body {
+            /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+            background-color: #F0EDEE;
+            padding: 20px;
+            padding-top: 150px;
+        }
+
+        .grid {
+            display: grid;
+            height: fit-content;
+            width: fit-content;
+            background-color: white;
+            border: 0;
+            gap: 50px;
+            border-radius: 40px;
+            padding: 50px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            ;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+
+            height: 560px;
+            width: 320px;
+            background-color: #F0EDEE;
+            border: 0;
+            border-radius: 40px;
+
+            padding: 30px;
+
+
+            box-shadow: 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            transition: 0.2s;
+        }
+
+        .card:hover {
+            z-index: 2;
+            transition: 0.2s;
+            transform: scale(1.1);
+            background-color: #965D30;
+
+            .name {
+                color: white;
+            }
+
+            .description {
+                color: white;
+            }
+        }
+
+        .name {
+
+            margin: 0;
+            margin-top: 10px;
+        }
+
+
+        .pfp-img {
+            height: 60%;
+            width: 100%;
+
+            border: 3px solid #F0EDEE;
+            border-radius: 40px;
+        }
+
+        .description {
+            text-align: center;
+        }
+
+        .book-btn {
+            background-color: #7a7a64;
+            border: 2px solid white;
+            border-radius: 40px;
+            font-size: large;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+            width: 50%;
+            height: 20%;
+            transition: 0.3s;
+        }
+
+        .book-btn:hover {
+            z-index: 2;
+            background-color: white;
+            border: 2PX solid #7a7a64;
+            color: #7a7a64;
+            transition: 0.3s;
+        }
+        footer {
+            background-color: var(--head-foot-color);
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 1em;
+        }
+    </style>
+    <title>ShantiSetu</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="Images/logo.jpg" width="130" height="auto" alt="Shanti Setu Logo">
+            <a href="shantisetuhomepage.html" class="heading-name-a" target="_parent">
+                <h1>Shanti Setu</h1>
+                <p>Bridge to Peace</p>
+            </a>
+        </div>
+        <nav>
+            <a href="shantisetumembership.html">Membership</a>
+            <a href="blog.html">Blog</a>
+            <a href="shantisetuAboutYoga.html">About Yoga</a>
+            <a href="shantisetusupport.html">Support</a>
+            <a href="ShantiSetuOurTeam.html">Our Team</a>
+            
+        </nav>
+    </header>
+    <div class="grid">
+        <div class="card" id="RAJ KHAMBHAYATA">
+            <img class="pfp-img" src="pfps/pfp-raj.jpeg">
+            <h1 class="name">
+                RAJ KHAMBHAYATA          
+            </h1>
+            <p class="description">
+                Breathe in peace, exhale stress.
+            </p>
+
+
+        </div>
+        <div class="card" id="jainil-shah">
+            <img class="pfp-img" src="pfps/pfp-jainil.jpeg">
+            <h1 class="name">
+                JAINIL SHAH
+            </h1>
+        
+            <p class="description">
+                Yoga is the journey of the self, through the self, to the self.
+            </p>
+
+
+
+
+
+            </button>
+        </div>
+
+        <div class="card" id="helly-mistry">
+            <img class="pfp-img" src="pfps/pfp-jainisha.jpeg">
+            <h1 class="name">
+                JAINISHA DESAI
+            </h1>
+            <p class="description">
+                Inhale the future, exhale the past.,
+            </p>
+
+
+        </div>
+
+        <div class="card" id="hitarth-parekh">
+            <img class="pfp-img" src="pfps/pfp-hitarth.jpeg">
+            <h1 class="name">
+                HITARTH PARIKH
+            </h1>
+            <p class="description">
+                Your body can do it; it’s your mind you have to convince.
+            </p>
+
+
+        </div>
+        <div class="card" id="dhyey-rathi">
+            <img class="pfp-img" src="pfps/pfp-dhyey.jpeg">
+            <h1 class="name">
+                DHYEY RATHI
+            </h1>
+            <p class="description">
+                Yoga teaches us to cure what need not be endured and endure what cannot be cured.
+            </p>
+
+
+        </div>
+
+        <div class="card" id="jainisha-desai">
+            <img class="pfp-img" src="pfps/pfp-helly.jpeg">
+            <h1 class="name">
+                HELLY MISTRY
+            </h1>
+            <p class="description">
+                Flexibility in body leads to flexibility in mind.
+            </p>
+
+
+        </div>
+
+        <div class="card" id="jesal-mistry">
+            <img class="pfp-img" src="pfps/pfp-jesal.jpeg">
+            <h1 class="name">
+                JESAL MISTRY
+            </h1>
+            <p class="description">
+                You are one yoga session away from a good mood.
+            </p>
+
+        </div>
+
+        <div class="card" id="marmik-gandhi">
+            <img class="pfp-img" src="pfps/pfp-marmik.jpeg">
+            <h1 class="name">
+                MARMIK GANDHI
+            </h1>
+            <p class="description">
+                Yoga is not about touching your toes, it’s about what you learn on the way down.
+            </p>
+
+
+        </div>
+
+        <div class="card" id="parth-prajapati">
+            <img class="pfp-img" src="pfps/pfp-parth.jpeg">
+            <h1 class="name">
+                PARTH PRAJAPATI
+            </h1>
+            <p class="description">
+                The quieter you become, the more you can hear.
+            </p>
+
+
+        </div>
+
+        <div class="card" id="vandan-mandaliya">
+            <img class="pfp-img" src="pfps/pfp-dhruvdubal.jpeg">
+            <h1 class="name">
+                DHRUV DUBAL
+            </h1>
+            <p class="description">
+                Through the practice of yoga, we remember that peace is always within us.
+
+
+        </div>
+
+        <div class="card" id="rohan-makwana">
+            <img class="pfp-img" src="pfps/pfp-rohan.jpeg">
+            <h1 class="name">
+                ROHAN MAKWANA
+            </h1>
+            <p class="description">
+                Your mat is a mirror. It reflects your strengths and areas for growth.
+            </p>
+
+
+        </div>
+
+        <div class="card" id="dhruv-dubal">
+            <img class="pfp-img" src="pfps/pfp-vandan.jpeg">
+            <h1 class="name">
+            VANDAN MANDALIYA
+            </h1>
+            <p class="description">
+                Yoga is the art of awakening to the beauty of life in every moment.
+            </p>
+        </div>
+    </div>
+    <script>
+        function redirect() {
+            window.location.href = "shantisetuyogamembership.html";
+        }
+    </script>
+    <footer>
+        <p>&copy; 2024 Shanti Setu | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>

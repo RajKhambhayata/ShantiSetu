@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <div class="form-toggle">
+                <button id="login-btn" class="active">Login</button>
+                <button id="signup-btn">Signup</button>
+            </div>
+
+            <!-- Login Form -->
+            <form id="login-form" class="form">
+                <h2>Login</h2>
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" name="email" required>
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="password" required>
+                <button type="submit">Login</button>
+                <p class="switch-form">Don't have an account? <a href="#" id="to-signup">Signup</a></p>
+                <button type="button" id="forgot-password-btn">Forgot Password?</button>
+            </form>
+
+            <!-- Forgot Password Form (Hidden by default) -->
+            <form id="forgot-password-form" class="form" style="display: none;">
+                <h2>Reset Password</h2>
+                <label for="forgot-email">Enter your email:</label>
+                <input type="email" id="forgot-email" name="forgot-email" required>
+                <button type="submit">Submit</button>
+                <p class="switch-form">Remember your password? <a href="#" id="to-login-from-forgot">Login</a></p>
+            </form>
+
+            <!-- Signup Form -->
+            <form id="signup-form" class="form" style="display: none;">
+                <h2>Signup</h2>
+                <label for="signup-name">Full Name:</label>
+                <input type="text" id="signup-name" name="name" required>
+                <label for="signup-email">Email:</label>
+                <input type="email" id="signup-email" name="email" required>
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" name="password" required>
+                <label for="signup-confirm-password">Confirm Password:</label>
+                <input type="password" id="signup-confirm-password" name="confirm-password" required>
+                <button type="submit">Signup</button>
+                <p class="switch-form">Already have an account? <a href="#" id="to-login">Login</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
